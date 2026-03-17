@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crochet Corner</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Crochet Corner 🧶</h2>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Handmade Crochet with Love</h1>
+                    <p>Beautiful handmade creations crafted just for you</p>
+                    <a href="#" class="btn">Shop Now</a>
+                </div>
+                <div class="hero-video">
+                    <video autoplay muted loop playsinline>
+                        <source th:src="@{/videos/crochet-video.mp4}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="products-section">
+        <div class="container-section">
+            <h2>Featured Creations</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image">
+                    <img th:src="@{/images/products/coaster.jpeg}" alt="Coaster">
+                    </div>
+                    <div class="card-title">Bear Coaster</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                    <img th:src="@{/images/products/Tote Bag.jpeg}" alt="tote bag">
+                    </div>
+                    <div class="card-title">Tote Bag</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                    <img th:src="@{/images/products/Basket.jpeg}" alt="basket">
+                    </div>
+                    <div class="card-title">Basket</div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                    <img th:src="@{/images/products/Cardigan.jpeg}" alt="Cardigan">
+                    </div>
+                    <div class="card-title">Cardigan</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-bg">
+        <div class="section about-section">
+            <div class="about-text">
+                <h2>About Me</h2>
+
+                <p class="about-intro">
+                    Hi, I’m a developer by profession and a crocheter by passion.
+                </p>
+
+                <p>
+                    I started crocheting as a way to step away from screens and explore a creative hobby beyond technology.
+                    Like many beginners, I learned through YouTube, one stitch at a time. In the beginning, it wasn’t easy —
+                    even crochet can be surprisingly tough on the eyes and requires patience.
+                </p>
+
+                <p>
+                    But seeing each small piece come together into something beautiful kept me going.
+                    What started as a simple break from coding soon turned into a meaningful creative journey.
+                </p>
+
+                <p class="about-highlight">
+                    Today, every piece I create is made with care, creativity, and a love for handmade artistry.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img th:src="@{/images/about.jpg}" alt="About Me">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Contact -->
+    <div class="contact-bg">
+        <div class="contact-section">
+            <div class="contact-left">
+                <h2>Get in touch</h2>
+                <p>📍 Location: St. Louis, MO</p>
+                <p>📧 Email: crochetcorner@gmail.com</p>
+                <p>📞 Phone: (123) 456-7890</p>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.2266493171064!2d-90.76803762387524!3d38.75850527175395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87dece3c576afa83%3A0x92fa241cc53d2ee7!2s331%20Newbridge%20Wy%2C%20O&#39;Fallon%2C%20MO%2063368!5e0!3m2!1sen!2sus!4v1773773528709!5m2!1sen!2sus"
+                        allowfullscreen=""
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div>
+        <div class="footer-brand">Crochet Corner 🧶</div>
+        <div class="footer-sub">Handmade with love</div>
+    </div>
+    <div>© 2026 Crochet Corner</div>
+</div>
+
+</body>
+</html>
